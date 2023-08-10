@@ -25,3 +25,12 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 # Install zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
+# Download the p10k config file
+curl -fsSLo ~/.p10k.zsh https://github.com/tbosnjak/bootstrap-working-environment/raw/tb/initall_script/.p10k.zsh
+
+chown $USER:. ~/.p10k.zsh && chmod 0664 ~/.p10k.zsh
+
+# Download the zshrc dot file
+curl -fsSLo ~/.zshrc https://raw.githubusercontent.com/tbosnjak/bootstrap-working-environment/tb/initall_script/.zshrc
+
+chown $USER:. ~/.zshrc && chmod 0644 ~/.zshrc
