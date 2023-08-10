@@ -11,7 +11,7 @@ sudo apt upgrade -y
 sudo apt install -y curl git vim wget ca-certificates apt-transport-https 
 
 # Install ZSH
-sudo apt install zsh
+sudo apt install zsh -y
 
 # Set ZSH to be a default shell for the user
 sudo usermod -s /usr/bin/zsh $USER
