@@ -35,6 +35,6 @@ curl -fsSLo ~/.p10k.zsh https://github.com/tbosnjak/bootstrap-working-environmen
 chown $(id -nu):$(id -ng) ~/.p10k.zsh && chmod 0664 ~/.p10k.zsh
 
 # Download the zshrc dot file
-curl -fsSLo ~/.zshrc https://raw.githubusercontent.com/tbosnjak/bootstrap-working-environment/master/.zshrc
+curl -fsSLo ~/.zshrc https://raw.githubusercontent.com/tbosnjak/bootstrap-working-environment/main/.zshrc
 
 chown $(id -nu):$(id -ng) ~/.zshrc && chmod 0644 ~/.zshrc
