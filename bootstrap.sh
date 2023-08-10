@@ -30,7 +30,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 # Download the p10k config file
-curl -fsSLo ~/.p10k.zsh https://raw.githubusercontent.com/tbosnjak/bootstrap-working-environment/main/.p10k.zsh
+curl -fsSLo ~/.p10k.zsh https://github.com/tbosnjak/bootstrap-working-environment/raw/master/.p10k.zsh
 
 chown $(id -nu):$(id -ng) ~/.p10k.zsh && chmod 0664 ~/.p10k.zsh
 
