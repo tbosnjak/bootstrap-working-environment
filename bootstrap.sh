@@ -32,9 +32,9 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 # Download the p10k config file
 curl -fsSLo ~/.p10k.zsh https://github.com/tbosnjak/bootstrap-working-environment/raw/tb/initall_script/.p10k.zsh
 
-chown $USER:. ~/.p10k.zsh && chmod 0664 ~/.p10k.zsh
+chown $(id -nu):$(id -ng) ~/.p10k.zsh && chmod 0664 ~/.p10k.zsh
 
 # Download the zshrc dot file
 curl -fsSLo ~/.zshrc https://raw.githubusercontent.com/tbosnjak/bootstrap-working-environment/tb/initall_script/.zshrc
 
-chown $USER:. ~/.zshrc && chmod 0644 ~/.zshrc
+chown $(id -nu):$(id -ng) ~/.zshrc && chmod 0644 ~/.zshrc
