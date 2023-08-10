@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 # Disable annoying message about kernel upgrade
-sed -i "s/#\$nrconf{kernelhints} = -1;/\$nrconf{kernelhints} = -1;/g" /etc/needrestart/needrestart.conf
+sudo sed -i "s/#\$nrconf{kernelhints} = -1;/\$nrconf{kernelhints} = -1;/g" /etc/needrestart/needrestart.conf
 
 # Initial updating of the software
 sudo apt update
